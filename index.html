@@ -6,6 +6,7 @@
     <title>Mary Troiani's Portfolio</title>
     <link href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/441940/jquery.fullPage.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Kalam:300|Open+Sans:400italic,400' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="CSS/main.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -17,105 +18,95 @@
 
 <body>
     <ul id="menu">
-        <li data-menuanchor="homepage" class="active"><a href="#homepage">Home</a></li>
-        <li data-menuanchor="aboutme"><a href="#aboutme">About</a></li>
-        <li data-menuanchor="myskills"><a href="#myskills">Skills</a></li>
-        <li data-menuanchor="mywebprojects"><a href="#mywebprojects">Web Projects</a></li>
-        <li data-menuanchor="mydataprojects"><a href="#mydataprojects">Data Projects</a></li>
-        <li data-menuanchor="contactme"><a href="#contactme">Contact</a></li>
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage">Home</a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage">About</a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage">Skills</a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage">Web Projects</a></li>
+        <li data-menuanchor="fifthPage"><a href="#fifthPage">Data Projects</a></li>
+        <li data-menuanchor="sixthPage"><a href="#sixthPage">Contact</a></li>
     </ul>
     <input type="checkbox" id="nav-trigger" class="nav-trigger" />
     <label for="nav-trigger">
     </label>
     <div class="site-wrap">
         <div id="fullpage">
-            <div data-anchor="homepage" id="home" class="section text-center">
+            <div id="home" class="section text-center">
                 <h1 class="text-center">Mary Troiani</h1>
                 <h3>Web Developer</h3>
             </div>
-            <div data-anchor="aboutme" id="about" class="section">
+            <div id="about" class="section">
                 <h2>About Me:</h2>
                 <img class="profilePic" data-src="CSS/Images/profilePicmd.jpg">
                 <p>Hi, I’m Mary Troiani. I’m a self-taught web developer learning through <a href="http://www.freecodecamp.com/mtroiani">freeCodeCamp’s</a> full stack web development program and other online resources. I love learning and always strive for continuous improvement. I’m willing (and happy) to put in the effort to master new skills. </p>
                 <p>I used to work in quality assurance and document control, where I was always the “go-to” person to find out what was wrong with our document control software. I enjoyed figuring out what was wrong and how to fix it, but once I started fCC I realized my real passion was using code to build things – from websites to games to graphs. </p>
                 <p>I'm currently looking for employment in the Long Beach or Orange County, California area. If you'd like to work with me, or want more information feel free to get in touch
-                    <a href="#contactme">here</a>.</p>
+                    <a href="#sixthPage">here</a>.</p>
             </div>
-            <div data-anchor="myskills" id="skills" class="section">
+            <div id="skills" class="section">
                 <h2>Skills</h2>
                 <div class="logos">
-                    <div class="logo">
-                        <img src="CSS/Images/Logos/htmlLogo.png">
-                        <p>HTML5</p>
-                    </div>
-                    <div class="logo">
-                        <img src="CSS/Images/Logos/cssLogo.png">
-                        <p>CSS3</p>
-                    </div>
-                    <div class="logo">
-                        <img src="CSS/Images/Logos/jsLogo.png">
-                        <p>Javascript</p>
-                    </div>
-                    <div class="logo">
-                        <img src="CSS/Images/Logos/jQueryLogo.png">
-                        <p>jQuery</p>
-                    </div>
-                    <div class="logo">
-                        <img src="CSS/Images/Logos/d3Logo.png">
-                        <p>D3.js</p>
-                    </div>
-                    <div class="logo">
-                        <img src="CSS/Images/Logos/bootstrapLogo.svg">
-                        <p>Bootstrap</p>
-                    </div>
-                    <div class="logo">
-                        <img src="CSS/Images/Logos/reactLogo.png">
-                        <p>React</p>
-                    </div>
-                    <div class="logo">
-                        <img src="CSS/Images/Logos/sassLogo.png">
-                        <p>Sass</p>
-                    </div>
-                    <h4>Currently Learning:</h4>
-                    <p>MongoDB, Node.js, and Express.js</p>
+									<h3>Front End:
+									<i class="devicon-html5-plain-wordmark"></i>
+									<i class="devicon-css3-plain-wordmark"></i>
+									<i class="devicon-bootstrap-plain-wordmark"></i>
+									<i class="devicon-sass-original"></i>
+								</h3>
+								<h3>JavaScript:
+									<i class="devicon-javascript-plain"></i>
+									<i class="devicon-jquery-plain-wordmark"></i>
+									<i class="devicon-react-original-wordmark"></i>
+									<i class="devicon-angularjs-plain"></i>
+									<i class="devicon-d3js-plain"></i>
+								</h3>
+								<h3>Back End:
+									<i class="devicon-nodejs-plain"></i>
+									<i class="devicon-mongodb-plain-wordmark"></i>
+								</h3>
+								<h3>Build Tools:
+									<i class="devicon-atom-original"></i>
+									<i class="devicon-gulp-plain"></i>
+									<i class="devicon-git-plain-wordmark"></i>
+									<i class="devicon-github-plain-wordmark"></i>
+									<i class="devicon-heroku-original-wordmark"></i>
+								</h3>
                 </div>
             </div>
-            <div data-anchor="mywebprojects" id="projects" class="section">
-              <div class="slide item">
+            <div id="projects" class="section">
+							<div class="slide item">
                   <h2>Front-End Web Projects</h2>
-                  <a href="https://codepen.io/mtroiani/full/kXAARr">
-                      <img src="CSS/Images/Projects/recipes.png" class="img-responsive">
+                  <a href="https://mtroiani.github.io/roguelike/">
+                      <img src="CSS/Images/Projects/rogue.png" class="img-responsive">
                   </a>
-                  <h3>Recipe Box</h3>
-                  <p>Sass, Bootstrap and React</p>
+                  <h3>React Roguelike Dungeon Crawler</h3>
+                  <p>Sass, Bootstrap, and React</p>
+              </div>
+							<div class="slide item">
+                  <h2>Front-End Web Projects</h2>
+                  <a href="http://codepen.io/mtroiani/full/wWVjqp/">
+                      <img src="CSS/Images/Projects/life.png" class="img-responsive">
+                  </a>
+                  <h3>Conway's Game of Life</h3>
+                  <p>Sass, Bootstrap, and React</p>
               </div>
               <div class="slide item">
                   <h2>Front-End Web Projects</h2>
-                  <a href="https://codepen.io/mtroiani/full/EPpBZB/">
-                      <img src="CSS/Images/Projects/simon.png" class="img-responsive">
+                  <a href="http://codepen.io/mtroiani/full/EPpBZB/">
+                      <img data-src="CSS/Images/Projects/simon.png" class="img-responsive">
                   </a>
                   <h3>Simon Game</h3>
                   <p>CSS and jQuery</p>
               </div>
-              <div class="slide item">
-                  <h2>Front-End Web Projects</h2>
-                  <a href="https://codepen.io/mtroiani/full/ZOwbxW/">
-                      <img data-src="CSS/Images/Projects/markdown.png" class="img-responsive">
-                  </a>
-                  <h3>Markdown Previewer</h3>
-                  <p>Sass, Bootstrap and React</p>
-              </div>
                 <div class="slide item">
                     <h2>Front-End Web Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/MeJoWZ/">
+                    <a href="http://codepen.io/mtroiani/full/MeJoWZ/">
                         <img data-src="CSS/Images/Projects/pomo.png" class="img-responsive">
                     </a>
                     <h3>Pomodoro Clock</h3>
-                    <p>Bootstrap and vanilla Javascript</p>
+                    <p>Bootstrap and vanilla JavaScript</p>
                 </div>
                 <div class="slide item">
                     <h2>Front-End Web Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/LZRWQa/">
+                    <a href="http://codepen.io/mtroiani/full/LZRWQa/">
                         <img data-src="CSS/Images/Projects/calculator.png" class="img-responsive">
                     </a>
                     <h3>JavaScript Calculator</h3>
@@ -131,7 +122,7 @@
                 </div>
                 <div class="slide item">
                     <h2>Front-End Web Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/ZQjdWm/">
+                    <a href="http://codepen.io/mtroiani/full/ZQjdWm/">
                         <img data-src="CSS/Images/Projects/twitch.png" class="img-responsive">
                     </a>
                     <h3>Twitch.tv API</h3>
@@ -139,7 +130,7 @@
                 </div>
                 <div class="slide item">
                     <h2>Front-End Web Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/VexERm/">
+                    <a href="http://codepen.io/mtroiani/full/VexERm/">
                         <img data-src="CSS/Images/Projects/wiki.png" class="img-responsive">
                     </a>
                     <h3>Wikipedia Search Viewer</h3>
@@ -147,25 +138,33 @@
                 </div>
                 <div class="slide item">
                     <h2>Front-End Web Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/bEKMaN/">
+                    <a href="http://codepen.io/mtroiani/full/bEKMaN/">
                         <img data-src="CSS/Images/Projects/tictactoe.png" class="img-responsive">
                     </a>
                     <h3>Unbeatable Tic Tac Toe</h3>
                     <p>Bootstrap and jQuery</p>
                 </div>
+								<div class="slide item">
+                    <h2>Front-End Web Projects</h2>
+                    <a href="http://codepen.io/mtroiani/full/ZOwbxW/">
+                        <img data-src="CSS/Images/Projects/markdown.png" class="img-responsive">
+                    </a>
+                    <h3>Markdown Previewer</h3>
+                    <p>Sass, Bootstrap, and React</p>
+                </div>
             </div>
-            <div dataanchor="mydataprojects" id="dataProjects" class="section">
+            <div id="dataProjects" class="section">
                 <div class="slide item">
                     <h2>Data Visualization Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/VaOErz">
-                        <img src="CSS/Images/Projects/derby.png" class="img-responsive">
+                    <a href="http://codepen.io/mtroiani/full/VaOErz">
+                        <img data-src="CSS/Images/Projects/derby.png" class="img-responsive">
                     </a>
                     <h3>Mapping Roller Derby Across the World</h3>
-                    <p>Bootstrap and D3.js</p>
+                    <p>CSS and D3.js</p>
                 </div>
                 <div class="slide item">
                     <h2>Data Visualization Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/adrZpd">
+                    <a href="http://codepen.io/mtroiani/full/adrZpd">
                         <img src="CSS/Images/Projects/GDP.png" class="img-responsive">
                     </a>
                     <h3>US GDP Bar Chart</h3>
@@ -173,7 +172,7 @@
                 </div>
                 <div class="slide item">
                     <h2>Data Visualization Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/ZQgxRP/">
+                    <a href="http://codepen.io/mtroiani/full/ZQgxRP/">
                         <img data-src="CSS/Images/Projects/bicycling.png" class="img-responsive">
                     </a>
                     <h3>Doping in Pro Bike Racing Scatterplot</h3>
@@ -181,7 +180,7 @@
                 </div>
                 <div class="slide item">
                     <h2>Data Visualization Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/YWKJEy/">
+                    <a href="http://codepen.io/mtroiani/full/YWKJEy/">
                         <img data-src="CSS/Images/Projects/Meteorites.png" class="img-responsive">
                     </a>
                     <h3>Mapping Meteorites Across the Globe</h3>
@@ -189,7 +188,7 @@
                 </div>
                 <div class="slide item">
                     <h2>Data Visualization Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/aNEMQb//">
+                    <a href="http://codepen.io/mtroiani/full/aNEMQb//">
                         <img data-src="CSS/Images/Projects/heat.png" class="img-responsive">
                     </a>
                     <h3>Global Monthly Temperature History</h3>
@@ -197,21 +196,21 @@
                 </div>
                 <div class="slide item">
                     <h2>Data Visualization Projects</h2>
-                    <a href="https://codepen.io/mtroiani/full/YWzxEO/">
+                    <a href="http://codepen.io/mtroiani/full/YWzxEO/">
                         <img data-src="CSS/Images/Projects/nations.png" class="img-responsive">
                     </a>
                     <h3>National Contiguity Force Directed Graph</h3>
                     <p>CSS and D3.js</p>
                 </div>
             </div>
-            <div dataanchor="contactme" id="contact" class="section">
+            <div id="contact" class="section">
                 <h2>Contact Me</h2>
                 <a href="mailto:troiani.mary@gmail.com"><i class="fa fa-envelope-o"></i></a>
                 <a href="https://github.com/mtroiani"><i class="fa fa-github-alt"></i></a>
                 <a href="https://www.linkedin.com/in/marytroiani"><i class="fa fa-linkedin"></i></a>
                 <a href="http://www.freecodecamp.com/mtroiani"><i class="fa fa-fire"></i></a>
                 <a href="https://www.codeschool.com/users/2418920"><i class="fa fa-code"></i></a>
-                <a href="https://codepen.io/mtroiani/"><i class="fa fa-codepen"></i></a>
+                <a href="http://codepen.io/mtroiani/"><i class="fa fa-codepen"></i></a>
                 <p class="sm-text">Made with <i class="fa fa-heart"></i> by Mary Troiani.</p>
             </div>
         </div>
